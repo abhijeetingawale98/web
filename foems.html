@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms Exercise</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <H2>Information form</H2>
+        <form action="thank_you.html" method="GET">
+            First Name : <input type="text" name="fname" placeholder="type your first name" required>
+            Last Name : <input type="text" name="lname" placeholder="type your last name" required> <br><br>
+            Password : <input type="password" name="password" placeholder="Enter ypur password" required><br><br>
+            Email : <input type="email" name="email" placeholder="Enter email"><br><br>
+            Select date of birth : <input type="date" name="DOB"><br><br>
+            <h5>Select Your gender</h5>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female<br><br>
+            <label id= "nation">Select Your Countery</label>
+            <select id="nation" required>
+                <option value="India" name="countery">India</option>
+                <option value="USA" name="countery">USA</option>
+                <option value="Spain" name="countery">Spain</option>
+            </select><br><br>
+            <label id="info">Type something about your self</label><br>
+            <textarea name="info" id="info" cols="30" rows="10" placeholder="Type here"></textarea><br><br>
+            Potograph : <input type="file" name ='photo'> <br><br>
+            Faverate colour : <input type="color" name="colour"> <br><br>
+            <input type="checkbox" name="true" required > Information above is of correct alive person<br><br>
+            <button type="submit">Submit Form</button>
+        </form>
+    </body>
+</html>
